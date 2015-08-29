@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="15A262e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,18 +21,55 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <animations/>
                             </mapView>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bP-bm-kEx" userLabel="No Services Container View">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3D-3A-7vU">
+                                        <rect key="frame" x="8" y="259" width="584" height="61.5"/>
+                                        <animations/>
+                                        <string key="text">You have disabled location services for this app, so it is unable to track your location, nor to send updates to the race organizers. Please reenable location services in the Settings app.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26O-Aj-zUK">
+                                        <rect key="frame" x="267.5" y="328" width="64" height="32"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="Settings"/>
+                                        <connections>
+                                            <action selector="didTapSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qoe-Ya-bJ0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="c3D-3A-7vU" firstAttribute="centerY" secondItem="5bP-bm-kEx" secondAttribute="centerY" id="4Ah-Yb-BGx"/>
+                                    <constraint firstItem="c3D-3A-7vU" firstAttribute="centerX" secondItem="5bP-bm-kEx" secondAttribute="centerX" id="6A2-Jg-dp1"/>
+                                    <constraint firstItem="26O-Aj-zUK" firstAttribute="top" secondItem="c3D-3A-7vU" secondAttribute="bottom" constant="8" symbolic="YES" id="BQq-0W-nV0"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="c3D-3A-7vU" secondAttribute="trailing" id="Kxb-me-ox5"/>
+                                    <constraint firstItem="c3D-3A-7vU" firstAttribute="leading" secondItem="5bP-bm-kEx" secondAttribute="leadingMargin" id="P39-1F-kOS"/>
+                                    <constraint firstItem="26O-Aj-zUK" firstAttribute="centerX" secondItem="c3D-3A-7vU" secondAttribute="centerX" id="lzo-KL-2HZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="xVN-od-wrX" secondAttribute="trailing" id="456-Q7-1p2"/>
+                            <constraint firstItem="5bP-bm-kEx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JLJ-0G-Rdn"/>
                             <constraint firstItem="xVN-od-wrX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="LuH-jZ-80A"/>
                             <constraint firstItem="xVN-od-wrX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Svt-id-Nzr"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xVN-od-wrX" secondAttribute="bottom" id="c8U-iM-CgA"/>
+                            <constraint firstAttribute="trailing" secondItem="5bP-bm-kEx" secondAttribute="trailing" id="fDd-3c-XL3"/>
+                            <constraint firstItem="5bP-bm-kEx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="s6Z-vZ-yxb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5bP-bm-kEx" secondAttribute="bottom" id="x43-vB-vAE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="xVN-od-wrX" id="Jh4-vi-PVx"/>
+                        <outlet property="noServicesContainerView" destination="5bP-bm-kEx" id="m5G-Eu-Tp6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
