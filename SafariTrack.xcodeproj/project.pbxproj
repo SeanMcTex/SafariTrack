@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14C8510A1B926F310093B791 /* MapRegions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C851091B926F310093B791 /* MapRegions.swift */; };
 		14E2E1A41B92650300DD50A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E2E1A31B92650300DD50A0 /* AppDelegate.swift */; };
 		14E2E1A61B92650300DD50A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E2E1A51B92650300DD50A0 /* ViewController.swift */; };
 		14E2E1A91B92650300DD50A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E2E1A71B92650300DD50A0 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		14E2E1AE1B92650300DD50A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E2E1AC1B92650300DD50A0 /* LaunchScreen.storyboard */; };
 		14E2E1B91B92650300DD50A0 /* SafariTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E2E1B81B92650300DD50A0 /* SafariTrackTests.swift */; };
 		14E2E1C41B92650300DD50A0 /* SafariTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E2E1C31B92650300DD50A0 /* SafariTrackUITests.swift */; };
+		14E2E1D41B926D3D00DD50A0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E2E1D31B926D3D00DD50A0 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14C851091B926F310093B791 /* MapRegions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapRegions.swift; sourceTree = "<group>"; };
 		14E2E1A01B92650300DD50A0 /* SafariTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E2E1A31B92650300DD50A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14E2E1A51B92650300DD50A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		14E2E1BF1B92650300DD50A0 /* SafariTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafariTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E2E1C31B92650300DD50A0 /* SafariTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariTrackUITests.swift; sourceTree = "<group>"; };
 		14E2E1C51B92650300DD50A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14E2E1D31B926D3D00DD50A0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E2E1D41B926D3D00DD50A0 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 		14E2E1971B92650300DD50A0 = {
 			isa = PBXGroup;
 			children = (
+				14E2E1D31B926D3D00DD50A0 /* MapKit.framework */,
 				14E2E1A21B92650300DD50A0 /* SafariTrack */,
 				14E2E1B71B92650300DD50A0 /* SafariTrackTests */,
 				14E2E1C21B92650300DD50A0 /* SafariTrackUITests */,
@@ -103,6 +109,7 @@
 				14E2E1AA1B92650300DD50A0 /* Assets.xcassets */,
 				14E2E1AC1B92650300DD50A0 /* LaunchScreen.storyboard */,
 				14E2E1AF1B92650300DD50A0 /* Info.plist */,
+				14C851091B926F310093B791 /* MapRegions.swift */,
 			);
 			path = SafariTrack;
 			sourceTree = "<group>";
@@ -255,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C8510A1B926F310093B791 /* MapRegions.swift in Sources */,
 				14E2E1A61B92650300DD50A0 /* ViewController.swift in Sources */,
 				14E2E1A41B92650300DD50A0 /* AppDelegate.swift in Sources */,
 			);
@@ -483,6 +491,7 @@
 				14E2E1CA1B92650300DD50A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14E2E1CB1B92650300DD50A0 /* Build configuration list for PBXNativeTarget "SafariTrackTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +500,7 @@
 				14E2E1CD1B92650300DD50A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14E2E1CE1B92650300DD50A0 /* Build configuration list for PBXNativeTarget "SafariTrackUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +509,7 @@
 				14E2E1D01B92650300DD50A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
