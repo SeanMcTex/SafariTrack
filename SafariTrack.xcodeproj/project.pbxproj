@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1497FB2F1B92975700196D54 /* LocationLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497FB2E1B92975700196D54 /* LocationLog.swift */; settings = {ASSET_TAGS = (); }; };
 		14C8510A1B926F310093B791 /* MapRegions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C851091B926F310093B791 /* MapRegions.swift */; };
 		14C8510C1B9276640093B791 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C8510B1B9276640093B791 /* Notifications.swift */; };
 		14E2E1A41B92650300DD50A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E2E1A31B92650300DD50A0 /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1497FB2E1B92975700196D54 /* LocationLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationLog.swift; sourceTree = "<group>"; };
 		14C851091B926F310093B791 /* MapRegions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapRegions.swift; sourceTree = "<group>"; };
 		14C8510B1B9276640093B791 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		14E2E1A01B92650300DD50A0 /* SafariTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafariTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,7 @@
 				14E2E1D11B92664D00DD50A0 /* LocationManager.swift */,
 				14C851091B926F310093B791 /* MapRegions.swift */,
 				14C8510B1B9276640093B791 /* Notifications.swift */,
+				1497FB2E1B92975700196D54 /* LocationLog.swift */,
 			);
 			path = SafariTrack;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				14E2E1A61B92650300DD50A0 /* ViewController.swift in Sources */,
 				14E2E1A41B92650300DD50A0 /* AppDelegate.swift in Sources */,
 				14E2E1D21B92664D00DD50A0 /* LocationManager.swift in Sources */,
+				1497FB2F1B92975700196D54 /* LocationLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

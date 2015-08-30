@@ -9,7 +9,8 @@
 import Foundation
 
 enum NotificationIdentifier: String {
-    case LocationAuthorized = "LocationAuthorized"
-    case LocationDenied = "LocationDenied"
+    case LocationAuthorized
+    case LocationDenied
+    case RecievedLocation
 }
 
