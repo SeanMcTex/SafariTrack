@@ -36,6 +36,23 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func didTapTracking(sender: AnyObject) {
+        // TODO: Implement
+        print("toggle tracking here")
+    }
+    
+    
+    @IBAction func didTapInfo(sender: AnyObject) {
+        let alert = UIAlertController(title: nil,
+            message: "SafariTrack is a creation of Sean McMains, Liam McMains, and Jeff Snider.", preferredStyle: .Alert)
+        let ok = UIAlertAction(title: "OK",
+            style: .Cancel) { (action) -> Void in
+                alert.dismissViewControllerAnimated(true, completion: nil)
+        }
+        alert.addAction( ok )
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
     // MARK: Supporting Methods
     
     func registerForNotifications() {
